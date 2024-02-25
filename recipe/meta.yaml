@@ -1,5 +1,5 @@
 {% set name = "histolab" %}
-{% set version = "0.5.1" %}
+{% set version = "0.7.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/histolab-{{ version }}.tar.gz
-  sha256: 7bbcfbc2c61a44ff38e0f4e618bb8e172516e793326beba23f793845750b01fb
+  sha256: c0f6a6d0381f0ca056f524e3b8217b0a8304ea79a0cdc88f76a39b1bf7531031
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
-  skip: True  # [win]
+  number: 0
+  skip: true  # [win]
 
 requirements:
   host:
