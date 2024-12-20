@@ -6,12 +6,12 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/histolab-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/histolab-{{ version }}.tar.gz
   sha256: 7bbcfbc2c61a44ff38e0f4e618bb8e172516e793326beba23f793845750b01fb
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 2
   skip: True  # [win]
 
 requirements:
